@@ -12,7 +12,7 @@ export default {
 
 <style scoped lang="sass">
     footer
-        background: green
+        background: #EC008C
         text-align: center
         color: white
         padding: 10px

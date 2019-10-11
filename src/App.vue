@@ -10,11 +10,6 @@
     </div>
 </template>
 
-<style lang="sass">
-    nav
-        background: cyan
-</style>
-
 <script>
 import SiteHeader from '@/components/SiteHeader.vue'
 import SiteMain from '@/components/SiteMain.vue'
@@ -30,6 +25,29 @@ export default {
 }
 </script>
 <style lang="sass">
+    #app
+      display: flex
+      flex-direction: column
+      width: 100%
+      height: 100vh
+
+    main
+        flex-grow: 1
+        height: 100%
+
+        section
+          height: 100%
+
+        video
+          height: 100%
+
     nav
         text-align: center
+        background: #EC008C
+
+        a
+          color: #fff
+
+    footer
+        align-items: flex-end
 </style>
