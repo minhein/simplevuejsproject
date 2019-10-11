@@ -6,7 +6,7 @@ module.exports = {
         types.forEach(type => addStyleResource(config.module.rule('sass').oneOf(type)))
     },
     publicPath: process.env.NODE_ENV === 'production'
-    ? '/my-project/'
+    ? '/simplevuejsproject/'
     : '/'
 }
 
