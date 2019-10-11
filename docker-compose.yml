@@ -1,0 +1,12 @@
+version: '2'
+services:
+  node:
+    image: node:9
+    working_dir: "/usr/src/app"
+    command: "npm run serve"
+    ports:
+      - 8000:8080
+    volumes:
+      - "./:/usr/src/app"
+      # mount ssh dir so we can install custom git packages using github auth
+      - "~/.ssh:/root/.ssh"

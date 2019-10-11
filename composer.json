@@ -1,0 +1,8 @@
+{
+    "name": "openhealthgroup/sanofi-praluent-commissioning-tool",
+    "type": "project",
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.9",
+        "tightenco/collect": "^6.0"
+    }
+}

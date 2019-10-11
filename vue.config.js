@@ -1,0 +1,24 @@
+const path = require('path')
+
+module.exports = {
+    chainWebpack: config => {
+        const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
+        types.forEach(type => addStyleResource(config.module.rule('sass').oneOf(type)))
+    }
+}
+
+function addStyleResource (rule) {
+    rule.use('style-resource')
+        .loader('style-resources-loader')
+        .options({
+            patterns: [
+                path.resolve(__dirname, './src/styles/_variables.sass'),
+                path.resolve(__dirname, './src/styles/_base.sass'),
+                path.resolve(__dirname, './src/styles/_fonts.sass'),
+                path.resolve(__dirname, './src/styles/_typography.sass'),
+                path.resolve(__dirname, './src/styles/_buttons.sass'),
+                path.resolve(__dirname, './src/styles/_forms.sass'),
+                path.resolve(__dirname, './src/styles/_tables.sass')
+            ]
+        })
+};
