@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Contact from './views/Contact.vue'
+import Launch from './views/Launch.vue'
 
 Vue.use(Router)
 
@@ -13,9 +13,9 @@ export default new Router({
             component: Home
         },
         {
-            path: '/contact',
-            name: 'contact',
-            component: Contact
+            path: '/launch',
+            name: 'launch',
+            component: Launch
         }
     ]
 })

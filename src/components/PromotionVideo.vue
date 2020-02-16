@@ -1,5 +1,7 @@
 <template>
-    <video width="100%" autoplay loop src="@/assets/videos/oh.mp4"></video>
+    <div>
+        <img alt="HW" src="@/assets/images/logo.png" width="100" height="auto">
+    </div>
 </template>
 <script>
 export default {
@@ -8,5 +10,8 @@ export default {
 </script>
 <style scoped lang="sass">
     img
-        display: inline
+        display: block
+        height: auto
+        max-width: 100px
+        margin: 0px auto
 </style>

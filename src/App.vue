@@ -3,7 +3,7 @@
         <SiteHeader/>
         <nav>
             <router-link to="/">Home</router-link>
-            <router-link to="/contact">Contact</router-link>
+            <router-link to="/launch">Launch</router-link>
         </nav>
         <SiteMain />
         <SiteFooter />
@@ -29,10 +29,11 @@ export default {
       display: flex
       flex-direction: column
       width: 100%
-      height: 100vh
+      height: 100%
+      overflow: hidden
 
     main
-        flex-grow: 1
+        flex-grow: 0
         height: 100%
 
         section
@@ -44,6 +45,9 @@ export default {
     nav
         text-align: center
         background: #EC008C
+
+        .router-link-exact-active
+          text-shadow: 1px 0px 0px #fff
 
         a
           color: #fff

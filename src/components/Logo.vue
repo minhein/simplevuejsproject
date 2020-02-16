@@ -1,6 +1,6 @@
 <template>
     <div class="logo">
-        <img alt="OH" src="@/assets/images/logo.png" width="200">
+        <img alt="HW" src="@/assets/images/logo.png" width="200">
     </div>
 </template>
 <script>
@@ -10,5 +10,7 @@ export default {
 </script>
 <style scoped lang="sass">
     img
-        display: inline
+        display: inline-block
+        max-height: 70px
+        width: auto
 </style>

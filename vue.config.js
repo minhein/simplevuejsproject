@@ -5,12 +5,24 @@ module.exports = {
         const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
         types.forEach(type => addStyleResource(config.module.rule('sass').oneOf(type)))
     },
-    publicPath: process.env.NODE_ENV === 'production'
-    ? '/simplevuejsproject/'
-    : '/'
+    pwa: {
+        name: 'Simple Vuejs Project',
+        themeColor: '#4DBA87',
+        msTileColor: '#000000',
+        appleMobileWebAppCapable: 'yes',
+        appleMobileWebAppStatusBarStyle: 'black',
+
+        // configure the workbox plugin
+        workboxPluginMode: 'InjectManifest',
+        workboxOptions: {
+            // swSrc is required in InjectManifest mode.
+            swSrc: 'dev/sw.js',
+            // ...other Workbox options...
+        }
+    }
 }
 
-function addStyleResource (rule) {
+function addStyleResource(rule) {
     rule.use('style-resource')
         .loader('style-resources-loader')
         .options({

@@ -16,14 +16,14 @@ export default {
 <style lang="sass">
     header
         padding: 10px
-        background: rgb(13, 33, 58)
+        background: rgba(0, 0, 0, 0.1)
         text-align: center
 
     a
-            padding: 10px
-            display: inline-block
-            text-decoration: none
+        padding: 10px
+        display: inline-block
+        text-decoration: none
 
-            &:hover
-                text-decoration: underline
+        &:hover
+            text-decoration: underline
 </style>

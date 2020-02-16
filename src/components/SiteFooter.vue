@@ -1,6 +1,6 @@
 <template>
     <footer>
-        &copy; Copyright OPEN Health 2019. All rights reserved. OPEN Health and OPEN VIE are registered trademarks.
+        &copy; Copyright HELLO World 2019. All rights reserved. HELLO World is registered trademarks.
     </footer>
 </template>
 
